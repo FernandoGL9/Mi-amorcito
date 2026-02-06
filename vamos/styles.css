@@ -1,0 +1,64 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffffffce 1%, rgba(245, 51, 170, 0.651));
+}
+.card{
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(30px);
+    width: 320px;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.306);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 41, 41, 0.26);
+    text-align: center;
+    
+}
+.nombre{
+    text-align: center;
+}
+.pregunta{
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 3px;
+    min-width: 60%;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10px;
+    background-color: #ffffff3a; 
+    backdrop-filter: blur(30px);  
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #fff6;
+
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+.respuesta{
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+    height: 20vh;
+    background-color: #ffffff5b;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.418);
+    align-content: center; 
+    padding-left: 20%;
+    box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.068);
+}
+img{
+    margin-top: 17px;
+    width: 240px;
+    height: 240px;
+    border-radius: 200px;
+}
+h5{
+    font-size: 11px;
+    font-weight: 400;
+}

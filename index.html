@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Amorcito</title>
+</head>
+<body>
+    <div class="card">
+        <img src="jejeje.jpg" alt="gatito">
+        <h1>
+            Amorcito😋
+        </h1>
+        <h2 class="pregunta">
+            Quieres ser mi San Valentin??🥺💖
+        </h2>
+        <div class="respuesta">
+            <button class="si"><a href="/vamos/index.html">Si💗</a></button>
+            <button class="no">No😔</button>
+        </div>
+        <p>Te amo nalgona</p>
+    </div>
+    <script>
+        const boton = document.querySelector(".no");
+        const contenedor = document.querySelector(".respuesta");
+
+        function mover() {
+
+            const maxX = contenedor.offsetWidth - boton.offsetWidth;
+            const maxY = contenedor.offsetHeight - boton.offsetHeight;
+
+            let x = Math.random() * maxX;
+            let y = Math.random() * maxY;
+
+            // 🔒 fuerza límites
+            x = Math.max(0, Math.min(x, maxX));
+            y = Math.max(0, Math.min(y, maxY));
+
+            boton.style.left = x + "px";
+            boton.style.top = y + "px";
+        }
+
+        boton.addEventListener("click", mover);
+    </script> 
+</body>
+</html>
